@@ -94,7 +94,12 @@ function TopSection() {
             <Typography variant="body1">⌨️&nbsp;&nbsp;</Typography>
             <Typography variant="body1">
               Completed{" "}
-              <a href="https://www.bloomtech.com/courses/full-stack-web-development">
+              <a
+                style={{ color: "inherit", fontWeight: "bold" }}
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.bloomtech.com/courses/full-stack-web-development"
+              >
                 Bloom Institute of Technology
               </a>{" "}
               (previously Lambda School) Full Stack Web Dev course
@@ -117,7 +122,7 @@ function TopSection() {
           height: "12vh",
           [theme.breakpoints.down("md")]: {
             width: "95%",
-            height: "20px"
+            height: "20px",
           },
         }}
       ></Box>

@@ -1,24 +1,28 @@
 import "./App.css";
-import TopSection from "./sections/TopSection";
+import Home from "./Home";
 import DesktopNav from "./nav/DesktopNav";
 import Hidden from "@mui/material/Hidden";
 import MobileNav from "./nav/MobileNav";
-import Projects from "./sections/Projects";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import MoreAbout from "./sections/MoreAbout";
 
 function App() {
   return (
-    <div className="root">
-      <Hidden mdDown>
-        <DesktopNav />
-      </Hidden>
-      <Hidden mdUp>
-        <MobileNav />
-      </Hidden>
-      <TopSection />
-      <Projects />
-      <MoreAbout />
-    </div>
+    <Router>
+      <div className="root">
+        <Hidden mdDown>
+          <DesktopNav />
+        </Hidden>
+        <Hidden mdUp>
+          <MobileNav />
+        </Hidden>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/library" element={<MoreAbout />} />
+        </Routes>
+        {/* <Home /> */}
+      </div>
+    </Router>
   );
 }
 

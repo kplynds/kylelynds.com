@@ -2,6 +2,7 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import theme from "../theme";
+import { FaEthereum } from "react-icons/fa";
 
 const Projects = () => {
   return (
@@ -10,7 +11,7 @@ const Projects = () => {
         margin: "0 auto",
         [theme.breakpoints.up("md")]: {
           width: "920px",
-        //   height: "100vh",
+          //   height: "100vh",
         },
         [theme.breakpoints.down("md")]: {
           width: "80%",
@@ -20,6 +21,9 @@ const Projects = () => {
         },
       }}
     >
+      {
+        // eslint-disable-next-line
+      }<a name="projects"></a>
       <Typography
         sx={{
           fontWeight: "bold",
@@ -35,17 +39,23 @@ const Projects = () => {
           margin: "2rem 0",
           [theme.breakpoints.up("md")]: {
             width: "700px",
-            margin: "0 auto"
+            margin: "0 auto",
           },
         }}
       >
         <Typography>
           🎵&nbsp;&nbsp;yamber —{" "}
-          <a rel="noreferrer" target="_blank" href="https://yamber.co/">
+          <a
+            style={{ color: "inherit", fontWeight: "bold" }}
+            rel="noreferrer"
+            target="_blank"
+            href="https://yamber.co/"
+          >
             yamber.co
           </a>{" "}
           —{" "}
           <a
+            style={{ color: "inherit", fontWeight: "bold" }}
             rel="noreferrer"
             target="_blank"
             href="https://github.com/kplynds/flume"
@@ -56,7 +66,7 @@ const Projects = () => {
         <ul>
           <li>
             <Typography variant="body2">
-              Full-scale web app to see and share music taste
+              Full-Stack web app to see and share music taste
             </Typography>
           </li>
           <li>
@@ -75,8 +85,15 @@ const Projects = () => {
           <li>
             <Typography variant="body2">
               First full stack project. Integrates Spotify Web API and{" "}
-              <a href="https://stytch.com/">Stytch</a> for auth management and
-              text verification
+              <a
+                style={{ color: "inherit", fontWeight: "bold" }}
+                rel="noreferrer"
+                target="_blank"
+                href="https://stytch.com/"
+              >
+                Stytch
+              </a>{" "}
+              for auth management and text verification
             </Typography>
           </li>
           <li>
@@ -89,9 +106,61 @@ const Projects = () => {
       </Box>
       <Box
         sx={{
+          margin: "2rem 0",
           [theme.breakpoints.up("md")]: {
             width: "700px",
-            margin: "0 auto"
+            margin: "0 auto",
+          },
+        }}
+      >
+        <Typography>
+          <FaEthereum />
+          &nbsp;&nbsp;Simple Eth Explorer —{" "}
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://simple-eth-explorer.vercel.app/"
+            style={{ color: "inherit", fontWeight: "bold" }}
+          >
+            deployed link
+          </a>{" "}
+          —{" "}
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://github.com/kplynds/tsx-ethers/tree/master/tsx-ethers"
+            style={{ color: "inherit", fontWeight: "bold" }}
+          >
+            Github
+          </a>
+        </Typography>
+        <ul>
+          <li>
+            <Typography variant="body2">
+              Simple web app to query and write to the ethereum blockchain
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body2">
+              Tech Stack:{" "}
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://docs.ethers.io/v5/"
+                style={{ color: "inherit", fontWeight: "bold" }}
+              >
+                ethers.js
+              </a>
+              , React, Typescript, Tailwind
+            </Typography>
+          </li>
+        </ul>
+      </Box>
+      <Box
+        sx={{
+          [theme.breakpoints.up("md")]: {
+            width: "700px",
+            margin: "0 auto",
           },
         }}
       >
@@ -119,6 +188,7 @@ const Projects = () => {
           borderRadius: "8px",
           width: "920px",
           margin: "0 auto",
+          marginTop: "5rem",
           height: "12vh",
           [theme.breakpoints.down("md")]: {
             width: "95%",
