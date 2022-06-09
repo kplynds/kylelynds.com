@@ -24,7 +24,7 @@ function DesktopNav() {
           Home
         </Typography>
       </NavLink>
-      <a style={{ textDecoration: "none", color: "black" }} href="#projects">
+      <a style={{ textDecoration: "none", color: "black" }} href="/#projects">
         <Typography
           sx={{
             margin: "0 1rem",
@@ -33,7 +33,7 @@ function DesktopNav() {
           Projects
         </Typography>
       </a>
-      <a style={{ textDecoration: "none", color: "black" }} href="#about">
+      <a style={{ textDecoration: "none", color: "black" }} href="/#about">
         <Typography
           sx={{
             margin: "0 1rem",

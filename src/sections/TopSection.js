@@ -108,7 +108,14 @@ function TopSection() {
           <div className="top-text">
             <Typography variant="body1">📲&nbsp;&nbsp;</Typography>
             <Typography variant="body1">
-              My phone number is 949-981-5480 and email is klynds1@babson.edu
+              My Github is <a
+                style={{ color: "inherit", fontWeight: "bold" }}
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.github.com/kplynds"
+              >
+                here
+              </a>{" "} and email is klynds1@babson.edu
             </Typography>
           </div>
         </Box>

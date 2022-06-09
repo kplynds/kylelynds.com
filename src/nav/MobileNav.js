@@ -45,7 +45,7 @@ function MobileNav() {
           </Link>
           <a
             style={{ textDecoration: "none", color: "black" }}
-            href="#projects"
+            href="/#projects"
           >
             <div onClick={toggle} style={{ display: "flex", margin: "1rem 0" }}>
               <CodeIcon
@@ -58,7 +58,7 @@ function MobileNav() {
           </a>
           <a
             style={{ textDecoration: "none", color: "black" }}
-            href="#about"
+            href="/#about"
           >
           <div onClick={toggle} style={{ display: "flex", margin: "1rem 0" }}>
             <PsychologyIcon
