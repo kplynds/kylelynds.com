@@ -9,7 +9,9 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import CodeIcon from "@mui/icons-material/Code";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import { Link } from "react-router-dom";
-import MenuBookIcon from '@mui/icons-material/MenuBook';
+import MenuBookIcon from "@mui/icons-material/MenuBook";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -56,18 +58,15 @@ function MobileNav() {
               <Typography>Projects</Typography>
             </div>
           </a>
-          <a
-            style={{ textDecoration: "none", color: "black" }}
-            href="/#about"
-          >
-          <div onClick={toggle} style={{ display: "flex", margin: "1rem 0" }}>
-            <PsychologyIcon
-              sx={{
-                margin: "0 1rem",
-              }}
-            />
-            <Typography>More</Typography>
-          </div>
+          <a style={{ textDecoration: "none", color: "black" }} href="/#about">
+            <div onClick={toggle} style={{ display: "flex", margin: "1rem 0" }}>
+              <PsychologyIcon
+                sx={{
+                  margin: "0 1rem",
+                }}
+              />
+              <Typography>More</Typography>
+            </div>
           </a>
           <Link
             style={{ textDecoration: "none", color: "black" }}
@@ -82,6 +81,36 @@ function MobileNav() {
               <Typography>Library</Typography>
             </div>
           </Link>
+          <a
+            style={{ textDecoration: "none", color: "black" }}
+            rel="noreferrer"
+            target="_blank"
+            href="https://www.github.com/kplynds"
+          >
+            <div onClick={toggle} style={{ display: "flex", margin: "1rem 0" }}>
+              <GitHubIcon
+                sx={{
+                  margin: "0 1rem",
+                }}
+              />
+              <Typography>Github</Typography>
+            </div>
+          </a>
+          <a
+            style={{ textDecoration: "none", color: "black" }}
+            rel="noreferrer"
+            target="_blank"
+            href="https://www.linkedin.com/in/kylelynds/"
+          >
+            <div onClick={toggle} style={{ display: "flex", margin: "1rem 0" }}>
+              <LinkedInIcon
+                sx={{
+                  margin: "0 1rem",
+                }}
+              />
+              <Typography>LinkedIn</Typography>
+            </div>
+          </a>
         </Box>
       </Drawer>
     </Box>

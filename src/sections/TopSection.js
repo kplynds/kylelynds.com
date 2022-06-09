@@ -83,7 +83,7 @@ function TopSection() {
             <Typography variant="body1">📚&nbsp;&nbsp;</Typography>
             <div>
               <Typography variant="body1">
-                Current Sophmore at Babson College (B.S.)
+                Rising Junior at Babson College (B.S.)
               </Typography>
               <Typography variant="body1">
                 Concentrations: Economics + Tech Entreprenuership

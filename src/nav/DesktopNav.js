@@ -2,6 +2,8 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import "../App.css";
 import { NavLink } from "react-router-dom";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 function DesktopNav() {
   return (
@@ -51,6 +53,26 @@ function DesktopNav() {
           Library
         </Typography>
       </NavLink>
+      <a
+        style={{ textDecoration: "none", color: "black" }}
+        rel="noreferrer"
+        target="_blank"
+        href="https://www.linkedin.com/in/kylelynds/"
+      >
+        <LinkedInIcon sx={{
+            margin: "0 1rem",
+          }} />
+      </a>
+      <a
+        style={{ textDecoration: "none", color: "black" }}
+        rel="noreferrer"
+        target="_blank"
+        href="https://www.github.com/kplynds"
+      >
+        <GitHubIcon sx={{
+            margin: "0 1rem",
+          }} />
+      </a>
     </Box>
   );
 }
